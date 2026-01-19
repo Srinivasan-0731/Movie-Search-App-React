@@ -12,10 +12,11 @@ function App() {
   const fetchMovieData = async () => {
     try {
       setLoading(true);
-      const res = await fetch(` http://www.omdbapi.com/?s=${searchMovie}&apikey=3f2af509`,
+      const res = await fetch(
+        ` http://www.omdbapi.com/?s=${searchMovie}&apikey=3f2af509`,
       );
       const data = await res.json();
-      setAllMovieData(data.Search);
+      setAllMovieData(data.Search || []);
       setLoading(false);
     } catch (error) {
       console.log(error);

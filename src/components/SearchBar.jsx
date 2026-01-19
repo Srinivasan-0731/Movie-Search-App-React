@@ -11,7 +11,7 @@ function SearchBar({ searchMovie, setSearchMovie, fetchMovieData }) {
 				onChange={(e) => {
 					setSearchMovie(e.target.value);
 				}}
-				onKeyPress={(e) => {
+				onKeyDown = {(e) => {
 					if (e.key === "Enter") {
 						fetchMovieData();
 					}
