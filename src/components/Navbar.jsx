@@ -1,7 +1,7 @@
 import React from "react";
 // import Logo from "/favicon.png";
 
-function Navbar() {
+function NavBar() {
 	return (
 		<nav className="navbar bg-dark " data-bs-theme="dark">
 			<div className="container-fluid">
@@ -14,4 +14,4 @@ function Navbar() {
 	);
 }
 
-export default Navbar;
+export default NavBar;

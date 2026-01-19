@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SearchBar from "./components/SearchBar";
 import MovieCard from "./components/MovieCard";
-import Navbar from "./components/Navbar";
+import NavBar from "./components/NavBar";
 
 function App() {
   const [allMovieData, setAllMovieData] = useState([]);
@@ -27,7 +27,7 @@ function App() {
   console.log(allMovieData);
   return (
     <div className="bg">
-      <Navbar />
+      <NavBar />
       <SearchBar
         searchMovie={searchMovie}
         setSearchMovie={setSearchMovie}
